@@ -73,15 +73,16 @@ public class TelaFatorial extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtFatStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_txtFatStateChanged
-        // TODO add your handling code here:
+        //Declaração de variaveis.
         int n = Integer.parseInt(txtFat.getValue().toString());
         int c = n;
         int f = 1;
         String contagem = " ";
         String resultado = " ";
         
+        //Execução.
         while (c>=1){
-            f *= c;
+            f *= c; // Fatorial = Numero (n) vezes todos numeros ate  (c).
             contagem = contagem + (c + ".");
             c--;
         }
